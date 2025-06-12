@@ -26,6 +26,9 @@
       max-width: 900px;
       margin: auto;
     }
+    .about {
+      margin: 30px 0;
+    }
 
     .btn {
       display: inline-block;
@@ -39,12 +42,13 @@
     }
 
     .btn:hover {
-      background: #e68900;
+      background: white;
+      color: #00b4db;
       transform: scale(1.1);
     }
 
     .section {
-      margin: 3rem 0;
+      margin: 30px auto;
     }
 
     .maintainer-box {
@@ -53,7 +57,7 @@
       border-left: 5px solid #00b4db;
       border-right: 5px solid #00b4db;     
       border-radius: 8px;
-      animation: slideIn 7s ease, fadeIn 7s ease;
+      animation: slideIn 5s ease, fadeIn 5s ease;
     }
 
     footer {
@@ -62,14 +66,7 @@
       padding: 1rem;
       font-size: 0.9rem;
     }
-    .members {
-      margin-left: 30px;
-      padding: 20px;
-      border-left: 5px solid #00b4db;
-      border-right: 5px solid #00b4db;
-      border-radius: 20px;
-      animation: slideIn 7s ease, fadeIn 7s ease;
-    }
+
     .members p {
       margin-left: 40px;
       font-weight: bold;
@@ -82,18 +79,7 @@
   padding: 20px;
   flex-wrap: wrap; 
 }
-    .tools {
-      max-width: 200px;
-      text-align: center;
-      margin: 30px auto;
-      border-left: 5px solid orange;
-      border-right: 5px solid orange;
-      border-radius: 20px;
-    }
-    .tools img {
-       border-radius: 50%;
-       
-    }
+
    .html-box {
   display: flex;
   flex-direction: row;
@@ -103,12 +89,54 @@
   width: 150px;
   padding: 10px 20px;
 }
+.inline {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.owner {
+  width: 50%;
+  border-left: 4px solid #00b4db;
+  padding: 20px;
+  border-radius: 20px;
+}
+.member {
+  width: 30%;
+  border-left: 4px solid #00b4db;
+  padding: 20px;
+  border-radius: 20px;
+}
+.goals {
+  padding: 50px;
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+}
+.box {
+  opacity: 0;
+  width: 15%;
+  border-top: 2px solid #00b4db;
+  animation: fadeIn 7s ease forwards, slideIn 7s ease;
+}
+.box:nth-child(1) {
+  animation-delay: 0s;
+} 
+.box:nth-child(2) {
+  animation-delay: 2s;
+}
+.box:nth-child(3) {
+  animation-delay: 4s;
+}
+.box:nth-child(4) {
+  animation-delay: 6s;
+}
 
     @keyframes slideIn {
       0%, 70% {transform: translateX(200px);}
     }
     @keyframes fadeIn {
-      0%, 60% {opacity: 0;}
+      0%, 70% {opacity: 0;}
+      100% {opacity: 1;}
     }
 
     @media (max-width: 600px) {
