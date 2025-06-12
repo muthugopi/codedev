@@ -75,6 +75,13 @@
       font-weight: bold;
       padding: 10px;
     }
+    .box-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  flex-wrap: wrap; 
+}
     .tools {
       max-width: 200px;
       text-align: center;
