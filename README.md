@@ -1,16 +1,60 @@
-## Hi there 👋
-im muthugopi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style/test.css">
+  <title>CodeDev Community</title>
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to CodeDev</h1>
+    <p style="padding-bottom: 20px;">HTML & CSS Learning Community</p>
+    <a href="https://discord.gg/SDCdYgm8" class="btn" target="_blank">Join Our Discord</a>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>About Us</h2>
+      <p>CodeDev is a community for aspiring web developers who are beginning their journey with HTML and CSS. Learn, share, and grow together as we build the future, one line of code at a time.</p>
+    </div>
+
+    <div class="section maintainer-box">
+      <h3>Created & Maintained By</h3>
+      <p><strong>Muthugopi</strong> and the CodeDev Team</p>
+    </div>
+
+    <div class="section">
+      <h2>Future Plans</h2>
+      <ul>
+        <li>✅ HTML & CSS challenges</li>
+        <li>🧪 JavaScript tutorials</li>
+        <li>🖼️ Project gallery</li>
+        <li>📚 Community blog</li>
+      </ul>
+    </div>
+    <div class="members" id="memberBox">
+      <h2 style="text-align: center;">Members In Codedev</h2>
+      <hr>
+      <h3>Admin:</h3>
+      <p>MuthuGopi</p>
+      <h3>HTML Dev:</h3>
+      <p>SRI RAM</p>
+      <P>PRIYA DHARSHAN</P>
+      <p>NAGARAJ</p>
+      <p>BALA MURUGAN</p>
+      <h3>CSS Dev</h3>
+      <p>MUTUGOPI</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 CodeDev Community. All rights reserved.
 
 
-**muthugopi/muthugopi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+</body>
+</html>
