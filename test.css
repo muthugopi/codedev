@@ -76,25 +76,27 @@
       padding: 10px;
     }
     .tools {
+      max-width: 200px;
       text-align: center;
       margin: 30px auto;
       border-left: 5px solid orange;
+      border-right: 5px solid orange;
       border-radius: 20px;
     }
     .tools img {
        border-radius: 50%;
        
     }
-    .html-box {
-      display: flex;
-      margin: 10px auto;
-      text-align: center;
-      gap: 30px;
-      width: 150px;
-      max-width: 200px;
-      padding: 10px 20px;
+   .html-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px auto;
+  gap: 10px;
+  width: 150px;
+  padding: 10px 20px;
+}
 
-    }
     @keyframes slideIn {
       0%, 70% {transform: translateX(200px);}
     }

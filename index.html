@@ -5,16 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="test.css">
   <title>CodeDev Community</title>
-  <style>
-   
-  </style>
+
 </head>
 <body>
 
   <header>
     <h1>Welcome to CodeDev</h1>
     <p style="padding-bottom: 20px;">HTML & CSS Learning Community</p>
-    <a href="https://discord.gg/SDCdYgm8" class="btn" target="_blank">Join Our Discord</a>
+    <a href="https://discord.gg/SDCdYgm8" class="btn">Join Our Discord</a>
   </header>
 
   <div class="container">
@@ -25,14 +23,15 @@
 
     <div class="section maintainer-box">
       <h3>Created & Maintained By</h3>
-      <p><strong>Muthugopi</strong> and the CodeDev Team</p>
+      <p><strong>Muthugopi</strong></p>
+      <div class="typing" id="typing"></div>
     </div>
 
     <div class="section">
       <h2>Future Plans</h2>
       <ul>
         <li>✅ HTML & CSS challenges</li>
-        <li>🧪 JavaScript tutorials</li>
+        <li>🧪 JavaScript </li>
         <li>🖼️ Project gallery</li>
         <li>📚 Community blog</li>
       </ul>
@@ -66,6 +65,47 @@
 
   <footer>
     © 2025 CodeDev Community. All rights reserved.
+    </footer>
+    <script>
+      const roles = [
+      "Discord Bot Developer",
+      "HTML Developer",
+      "CSS Developer",
+      "GIT HUB Maintainer",
+      "Full Stack Learner"
+    ];
+    let current = 0;
+    let letterIndex = 0;
+    let isDeleting = false;
+    const typingElement = document.getElementById("typing");
+
+    function typeEffect() {
+      const currentRole = roles[current];
+      if (isDeleting) {
+        letterIndex--;
+      } else {
+        letterIndex++;
+      }
+
+      typingElement.innerText = currentRole.substring(0, letterIndex);
+
+      if (!isDeleting && letterIndex === currentRole.length) {
+        setTimeout(() => isDeleting = true, 1000);
+      } else if (isDeleting && letterIndex === 0) {
+        isDeleting = false;
+        current = (current + 1) % roles.length;
+      }
+
+      setTimeout(typeEffect, isDeleting ? 50 : 100);
+    }
+    window.onload = () => {
+    cards = Array.from(grid.children);
+    setInterval(animateShuffle, 2000);
+  };
+
+    document.addEventListener("DOMContentLoaded", typeEffect);
+
+    </script>
 
 
 </body>
