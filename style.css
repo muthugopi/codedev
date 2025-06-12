@@ -139,12 +139,39 @@
       100% {opacity: 1;}
     }
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 28px;
-      }
+   @media (max-width: 600px) {
+  header h1 {
+    font-size: 28px;
+  }
 
-      .btn {
-        padding: 10px 20px;
-      }
-    }
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .html-box {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .owner, .member {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .goals {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .box {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
