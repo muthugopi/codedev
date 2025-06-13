@@ -32,7 +32,8 @@
 
     .btn {
       display: inline-block;
-      background: #ff9800;
+      background: linear-gradient(to right, #ff9800, #ff5f00);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
       color: #fff;
       padding: 0.75rem 1.5rem;
       border-radius: 8px;
@@ -95,7 +96,7 @@
   justify-content: center;
 }
 .owner {
-  height: 120px;
+  height: 140px;
   width: 70%;
   border-left: 4px solid #00b4db;
   padding: 20px;
@@ -141,7 +142,8 @@
   gap: 30px;
 }
 .hbtn {
-  background: #ff9800;
+  background: linear-gradient(to right, #ff9800, #ff5f00);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   color: #fff;
   padding: 5px 10px;
   border-radius: 8px;
@@ -227,4 +229,13 @@
   .container {
     padding: 20px;
   }
+}
+.adev {
+  padding: 30px;
+  width: 80%;
+  border-left: solid 2px #00b4db;
+  display: flex;
+  margin: 20px;
+  border-radius: 10px;
+
 }
