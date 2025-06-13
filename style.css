@@ -95,6 +95,7 @@
   justify-content: center;
 }
 .owner {
+  height: 120px;
   width: 70%;
   border-left: 4px solid #00b4db;
   padding: 20px;
@@ -149,6 +150,45 @@
   transition: background 0.3s ease, transform 0.3s ease;
   gap: 30px;
 }
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 15px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+  }
+
+  .navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+
+  .navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: right;
+  }
+
+  .navbar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+ 
+
 .hbtn:hover {
       background: white;
       color: #00b4db;
